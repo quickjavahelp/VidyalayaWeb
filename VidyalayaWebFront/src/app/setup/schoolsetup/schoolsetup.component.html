@@ -23,128 +23,7 @@
       </div>
     </div>
 
-    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-      <mat-expansion-panel-header>
-        <mat-panel-title> <b>School Address</b> </mat-panel-title>
-      </mat-expansion-panel-header>
-      <div class="row">
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>Country</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>State</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>City</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>District</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>Division</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>Village</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>ward</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>Contact Number 1</mat-label>
-            <input matInput>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>Contact Number 2</mat-label>
-            <input matInput>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>Contact Number 3</mat-label>
-            <input matInput>
-          </mat-form-field>
-        </div>
-
-      </div>
-
-      <div class="row">
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>School Address 1</mat-label>
-            <textarea matInput placeholder="Board Address 1"></textarea>
-          </mat-form-field>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>School Address 2</mat-label>
-            <textarea matInput placeholder="Board Address 2"></textarea>
-          </mat-form-field>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>School Address 3</mat-label>
-            <textarea matInput placeholder="Board Address 3"></textarea>
-          </mat-form-field>
-        </div>
-      </div>
-    </mat-expansion-panel>
+    <app-address id="schoolAddress"></app-address>    
     <br />
 
     <div class="row">
@@ -172,129 +51,7 @@
         </div>
       </div>
     </div>
-
-
-    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-      <mat-expansion-panel-header>
-        <mat-panel-title> <b>Board Address</b> </mat-panel-title>
-      </mat-expansion-panel-header>
-      <div class="row">
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>Country</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>State</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>City</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>District</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>Division</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>Village</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>ward</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>Contact Number 1</mat-label>
-            <input matInput>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>Contact Number 2</mat-label>
-            <input matInput>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>Contact Number 3</mat-label>
-            <input matInput>
-          </mat-form-field>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>School Address 1</mat-label>
-            <textarea matInput placeholder="Board Address 1"></textarea>
-          </mat-form-field>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>School Address 2</mat-label>
-            <textarea matInput placeholder="Board Address 2"></textarea>
-          </mat-form-field>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>School Address 3</mat-label>
-            <textarea matInput placeholder="Board Address 3"></textarea>
-          </mat-form-field>
-        </div>
-      </div>
-    </mat-expansion-panel>
+    <app-address id="boardAddress"></app-address> 
 
   <br/>  
     <div class="row">
@@ -323,131 +80,29 @@
       </div>
     </div>
 
-
-    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
-      <mat-expansion-panel-header>
-        <mat-panel-title> <b>Board Address</b> </mat-panel-title>
-      </mat-expansion-panel-header>
-      <div class="row">
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>Country</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>State</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>City</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>District</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>Division</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm-2">
-          <mat-form-field>
-            <mat-label>Village</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>ward</mat-label>
-            <mat-select>
-              <mat-option value="one">First option</mat-option>
-              <mat-option value="two">Second option</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>Contact Number 1</mat-label>
-            <input matInput>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>Contact Number 2</mat-label>
-            <input matInput>
-          </mat-form-field>
-        </div>
-
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>Contact Number 3</mat-label>
-            <input matInput>
-          </mat-form-field>
-        </div>
-
-      </div>
-
-      <div class="row">
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>School Address 1</mat-label>
-            <textarea matInput placeholder="Board Address 1"></textarea>
-          </mat-form-field>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>School Address 2</mat-label>
-            <textarea matInput placeholder="Board Address 2"></textarea>
-          </mat-form-field>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm">
-          <mat-form-field>
-            <mat-label>School Address 3</mat-label>
-            <textarea matInput placeholder="Board Address 3"></textarea>
-          </mat-form-field>
-        </div>
-      </div>
-    </mat-expansion-panel>
+   <app-address id="branchAddress"></app-address>    
   </div>
-
-
-
+  
+  <br>
+  <mat-divider></mat-divider>
+  <br>
+  <section>
+    <div class="row">
+      <div class="col-sm"></div>
+      <div class="col-sm"></div>
+      <div class="col-sm"></div>
+      <div class="col-sm"></div>
+      <div class="col-sm"></div>
+      <div class="col-sm"></div>
+      <div class="col-sm"></div>
+      <div class="col-sm">
+        <button mat-flat-button  onclick="getDeptList()">Reset</button>        
+      </div>
+      <div class="col-sm">
+        <button mat-flat-button>Save</button>
+      </div>
+    </div>
+</section>
 </form>
+
+{{cou?.country_name}}
