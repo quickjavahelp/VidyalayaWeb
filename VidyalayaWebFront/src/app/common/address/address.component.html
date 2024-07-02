@@ -5,10 +5,10 @@
         </mat-expansion-panel-header>
         <div class="row">
           <div class="col-sm-2">
-            <mat-form-field>
+            <mat-form-field id="{{sufixIdFromPArent}}_country">
               <mat-label>Country</mat-label>
-              <mat-select [(value)]="cou">             
-                @for (cou of this.country; track cou) {
+              <mat-select [(value)]="cou" (selectionChange)="getState()">             
+                @for (cou of this.countrys; track cou) {
                     <mat-option [value]="cou">{{cou.country_name}}</mat-option>             
                 }
                 
@@ -16,19 +16,19 @@
             </mat-form-field>
           </div>
   
-  
           <div class="col-sm-2">
-            <mat-form-field>
+            <mat-form-field id="{{sufixIdFromPArent}}_state">
               <mat-label>State</mat-label>
-              <mat-select>
-                <mat-option value="one">First option</mat-option>
-                <mat-option value="two">Second option</mat-option>
+              <mat-select [(value)]="states">
+                @for (state of this.states; track state) {
+                <mat-option [value]="state">{{state.state_name}}</mat-option>               
+              }
               </mat-select>
             </mat-form-field>
           </div>
   
           <div class="col-sm-2">
-            <mat-form-field>
+            <mat-form-field id="{{sufixIdFromPArent}}_city">
               <mat-label>City</mat-label>
               <mat-select>
                 <mat-option value="one">First option</mat-option>
@@ -38,7 +38,7 @@
           </div>
   
           <div class="col-sm-2">
-            <mat-form-field>
+            <mat-form-field id="{{sufixIdFromPArent}}_distict">
               <mat-label>District</mat-label>
               <mat-select>
                 <mat-option value="one">First option</mat-option>
@@ -48,7 +48,7 @@
           </div>
   
           <div class="col-sm-2">
-            <mat-form-field>
+            <mat-form-field id="{{sufixIdFromPArent}}_division">
               <mat-label>Division</mat-label>
               <mat-select>
                 <mat-option value="one">First option</mat-option>
@@ -58,7 +58,7 @@
           </div>
   
           <div class="col-sm-2">
-            <mat-form-field>
+            <mat-form-field id="{{sufixIdFromPArent}}_village">
               <mat-label>Village</mat-label>
               <mat-select>
                 <mat-option value="one">First option</mat-option>
@@ -68,7 +68,7 @@
           </div>
   
           <div class="col-sm">
-            <mat-form-field>
+            <mat-form-field id="{{sufixIdFromPArent}}_ward">
               <mat-label>ward</mat-label>
               <mat-select>
                 <mat-option value="one">First option</mat-option>
@@ -77,21 +77,21 @@
             </mat-form-field>
           </div>
           <div class="col-sm">
-            <mat-form-field>
+            <mat-form-field id="{{sufixIdFromPArent}}_contactNumber1">
               <mat-label>Contact Number 1</mat-label>
               <input matInput>
             </mat-form-field>
           </div>
   
           <div class="col-sm">
-            <mat-form-field>
+            <mat-form-field id="{{sufixIdFromPArent}}_contactNumber2">
               <mat-label>Contact Number 2</mat-label>
               <input matInput>
             </mat-form-field>
           </div>
   
           <div class="col-sm">
-            <mat-form-field>
+            <mat-form-field id="{{sufixIdFromPArent}}_contactNumber3">
               <mat-label>Contact Number 3</mat-label>
               <input matInput>
             </mat-form-field>
@@ -101,7 +101,7 @@
   
         <div class="row">
           <div class="col-sm">
-            <mat-form-field>
+            <mat-form-field  id="{{sufixIdFromPArent}}_address1">
               <mat-label>School Address 1</mat-label>
               <textarea matInput placeholder="Board Address 1"></textarea>
             </mat-form-field>
@@ -109,7 +109,7 @@
         </div>
         <div class="row">
           <div class="col-sm">
-            <mat-form-field>
+            <mat-form-field  id="{{sufixIdFromPArent}}_address2">
               <mat-label>School Address 2</mat-label>
               <textarea matInput placeholder="Board Address 2"></textarea>
             </mat-form-field>
@@ -117,7 +117,7 @@
         </div>
         <div class="row">
           <div class="col-sm">
-            <mat-form-field>
+            <mat-form-field  id="{{sufixIdFromPArent}}_address3">
               <mat-label>School Address 3</mat-label>
               <textarea matInput placeholder="Board Address 3"></textarea>
             </mat-form-field>
@@ -125,4 +125,4 @@
         </div>
       </mat-expansion-panel>
       <br />
-</div>
+    </div>

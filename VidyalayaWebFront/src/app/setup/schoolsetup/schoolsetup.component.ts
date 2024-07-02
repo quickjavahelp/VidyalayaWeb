@@ -8,21 +8,29 @@ import {MatDividerModule} from '@angular/material/divider';
 import { SchoolSetupServiceService } from './school-setup-service.service';
 import { Country } from '../../model/country.model';
 import { AddressComponent } from '../../common/address/address.component';
+import {ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-schoolsetup',
   standalone: true,
-  imports: [MatExpansionModule,MatInputModule,MatSelectModule,MatButtonModule,MatDividerModule, AddressComponent],
+  imports: [MatExpansionModule,MatInputModule,MatSelectModule,MatButtonModule,MatDividerModule, AddressComponent, ReactiveFormsModule],
   providers:[SchoolSetupServiceService],
   templateUrl: './schoolsetup.component.html',
   styleUrl: './schoolsetup.component.css'
 })
 export class SchoolsetupComponent implements OnInit{
+
   public cou:Country | undefined;
   public country: Array<Country> = [];
   public schoolSetupService: SchoolSetupServiceService;
+  public schoolAddressId:String = "school";
+  public boardAddressId:String = "board";
+  public branchAddressId:String = "branch";
+
+
   constructor(schoolSetupService:SchoolSetupServiceService){
     this.schoolSetupService=schoolSetupService;
+    
   }
 
   ngOnInit(): void {
