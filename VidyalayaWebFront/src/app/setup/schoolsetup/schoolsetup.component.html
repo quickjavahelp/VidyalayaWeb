@@ -1,4 +1,5 @@
-<form class="form-inline">
+
+<form class="form-inline" >
   <div class="row">
 
     <div class="col-sm">
@@ -21,9 +22,9 @@
           <input type="text" id="inputRegistrationNo" class="form-control" placeholder="School Registration Number">
         </div>
       </div>
-    </div>
-
-    <app-address id="schoolAddress"></app-address>    
+    </div>    
+    <app-address id="schoolAddress"  [sufixIdFromPArent]="schoolAddressId"></app-address>    
+    
     <br />
 
     <div class="row">
@@ -50,8 +51,9 @@
           </div>
         </div>
       </div>
-    </div>
-    <app-address id="boardAddress"></app-address> 
+    </div>   
+       <app-address id="boardAddress" [sufixIdFromPArent]="boardAddressId"></app-address> 
+   
 
   <br/>  
     <div class="row">
@@ -79,8 +81,8 @@
         </div>
       </div>
     </div>
-
-   <app-address id="branchAddress"></app-address>    
+   
+        <app-address id="branchAddress" [sufixIdFromPArent]="branchAddressId"></app-address>   
   </div>
   
   <br>
@@ -104,5 +106,3 @@
     </div>
 </section>
 </form>
-
-{{cou?.country_name}}
