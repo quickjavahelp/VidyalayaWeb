@@ -23,7 +23,8 @@ export class AddressComponent implements OnInit{
   public countrys: Array<Country> = [];
   public states: Array<State> = [];
 
-  @Input() sufixIdFromPArent!: String;
+  @Input() sufixIdFromParent!: String;
+  @Input() headerName!: String;
   
   readonly panelOpenState = signal(false);
   public schoolSetupService: SchoolSetupServiceService;
